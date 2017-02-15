@@ -1,61 +1,267 @@
 <!DOCTYPE html>
- <html lang="en">
-    <head>
-        <title>My Resume</title>
-    </head>
-    <body>
-        <header>
-            <h1>Hasan ALRUBAYE</h1>
-            <h3>208-392-2811</h3>
-            <a href="https://www.google.com/">halrubia@gmail.com</a>
-            <p> I have been worked for 17 years in computer science. I have a master degree in Computer Science. 
-                I have worked as Professor and Supervisor for graduate student projects
-                 with 9 years of experience in a teaching and implementing graduation projects. 
-                 Professional software developer with several certifications seeking an 
-                 opportunity to utilize skills as a senior software developer in a technology department.</p>
-        </header>
-        <section>
-            <h1>Key Skills</h1>
-            <div>
-                <h3>Web development</h3>
-                <p>I have experience in web development in ASP.NET using MVC, HTML5, and CSS3 for one year</p>
-                <h3>Training and Teaching</h3>
-                <p>I have experience in Teaching , Supervising, and Training for Computer science for 9 years</p>
-                <h3>IT computer support</h3>
-                <p>I have experience in support IT solution for 1 year</p>
-            </div>
-        </section>
-        <section>
-            <h1>Work Experience</h1>
-            <div>
-                <h3>Software Developer intern At Idaho department of Labor</h3>
-                <div>
-                    <strong>06/01/2016</strong> - <strong>12/22/2016</strong>
-                </div>
-                <div>
-                    <ul>
-                        <li>Web development</li>
-                        <li>Database Mangemnet system</li>
-                        <li>software Developer</li>
-                    </ul>
-                </div>
-            </div> <div>
-                <h3> Professor and Supervisor for Computer Science student  At AL Mansour University College </h3>
-                <div>
-                    <strong>02/05/2005</strong> - <strong>09/01/2014</strong>
-                </div>
-                <div>
-                    <ul>
-                        <li>Teaching student more than 9 subjects</li>
-                        <li>Supervising for graduation project</li>
-                        <li>Training student or stuff</li>
-                    </ul>
-                </div>
-            </div>        
+<html lang="en">
 
-        </section>
-        <footer>
-            <p>Contact: <a href="Hasan:halrubia@gmail.com">halrubia@gmail.com</a></p>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=VT323|Gudea|Courgette|Lobster|Kaushan+Script" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Lobster|Titillium+Web" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                .add-padding {
+                    padding-right: 10px;
+                }
+                
+                .bg-color {
+                    background: goldenrod;
+                }
+                
+                .shadow {
+                    /* -moz-box-shadow:    3px 3px 5px 10px #aaa;
+                     -webkit-box-shadow: 3px 3px 5px 10px #999;*/
+                    box-shadow: 3px 3px 30px 8px #ccc;
+                }
+                
+                .remove-padd {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                
+                .Head-color {
+                    color: dodgerblue;
+                }
+                
+                .bg-Blue {
+                    background: dodgerblue;
+                    color: white;
+                }
+                
+                .container-title {
+                    font-weight: 600;
+                    font-size: 25px;
+                    font-variant: small-caps;
+                    background-color: dodgerblue;
+                    color: #fff;
+                    /*margin-left: -15px;*/
+                    padding-left: 15px;
+                    max-width: 280px;
+                }
+                
+                .topic {
+                    margin: 15px;
+                    max-width: 900px;
+                }
+                
+                .topic-timeframe {
+                    color: #8E8686;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                
+                topic-description {
+                    margin-left: 10px;
+                }
+                
+                .topic-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: dodgerblue;
+                }
+                
+                .ele-con {
+                    background-color: gray;
+                    height: 80px;
+                    /*border: 4px solid grey;*/
+                    color: whitesmoke;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 3.5em;
+                }
+                
+                .bg-panel {
+                    background-color: grey;
+                    color: whitesmoke;
+                    font-weight: bold;
+                    border: none;
+                    font-size: 1.2em;
+                }
+            </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--The first row-->
+        <div class="row ">
+            <div class="col-xs-12 col-md-4 bg-color shadow remove-padd">
+                <!--<img class="img-responsive" src="https://assets.entrepreneur.com/content/16x9/822/20141230193127-work.jpeg">-->
+                <img class="img-responsive" src="image/Pic1.jpg" width="100%">
+
+
+            </div>
+            <div class="col-xs-12 col-md-8 Head-color text-center shadow">
+                <h1 style="font-family: 'Kaushan Script', cursive;"> Hasan ALRUBAYE</h1>
+                <h3 style="font-family: 'Courgette', cursive; text-decoration: none;"><i class="fa fa-mobile" aria-hidden="true"></i> (208)392-2811 </h3>
+                <h2 style="font-family: 'Courgette', cursive;"><i class="fa fa-envelope-o" aria-hidden="true"></i> halrubia@gmail.com</h2>
+            </div>
+        </div>
+        <!-- Second Row-->
+        <div class="row">
+            <!-- First Column-->
+            <div class="col-xs-12 col-md-4 bg-color">
+                <br><br>
+                <h2 style="font-family: 'Lobster', cursive; font-size: 3em;"> <i class="fa fa-flag" aria-hidden="true"></i> Who am I !! </h2><br><br>
+                <p style="font-family: 'Gudea', sans-serif; font-size: 1.5em;"><i class="fa fa-star" aria-hidden="true"></i> I have been worked for 17 years in computer science. I have
+                    a master's degree in Computer Science. I have worked as Professor and Supervisor and have 9 years of
+                    experience in a teaching and implementing graduate-level projects. </p>
+                <br>
+                <p style="font-family: 'Gudea', sans-serif;font-size: 1.5em;"><i class="fa fa-star" aria-hidden="true"></i> Professional software developer with several certifications,
+                    seeking an opportunity to utilize my skills as a senior software developer.</p>
+
+                <h2> Key Skills</h2>
+
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-sitemap" aria-hidden="true"></i> Structural Programming Language</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body"> Pascal,C,C++,Prolog</div>
+                </div>
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-cubes" aria-hidden="true"></i> Visual Programming Language</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body"> VB,VC,Matlab,C#</div>
+                </div>
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body">HTML5,CSS3,JavaScript,jQuery,BootStrap, Asp.net MVC5</div>
+                </div>
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-database" aria-hidden="true"></i> Database System Language</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body"> FoxPro,Visual FoxPro,SQL Server</div>
+                </div>
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-briefcase" aria-hidden="true"></i> Application Software</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body "> Microsoft office,Adobe PhotoShop,Adobe Premier,Adobe Audition</div>
+                </div>
+
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-windows" aria-hidden="true"></i> Operating Systems</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body  "> Microsoft : Windows 2000 – Windows 10</div>
+                </div>
+                <h3 style="font-family: 'VT323', monospace;font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i> Certifications</h3>
+                <div class="panel bg-panel">
+                    <div class="panel-body  "> Web Design in Pioneer Academy <br> Programming in VB.net at Al Mansour Training Academy</div>
+                </div>
+
+
+            </div>
+            <!-- End of First Column-->
+
+            <div class="col-xs-12 col-md-8">
+                <!-- Second Column-->
+                <div class="row text-center">
+                    <div class="col-xs-12 col-md-4">
+                        <img src="web2.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    </div>
+                    <div class="col-xs-12 col-md-4 ">
+                        <img src="Database3.jpg" class="img-rounded shadow" alt="Cinque Terre" width="304" height="236">
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-4 text-center">
+                        <img src="Soft2.jpg" class="img-rounded" alt="DataBase" width="304" height="236">
+                        <br>
+                    </div>
+
+                </div><br><br>
+                <!--the end of First row [ Images]-->
+                <div class="row">
+                    <!--the begin of second row-->
+                    <section class="experience-container">
+                        <div class="container-title"><i class="fa fa-institution"></i> Work Experience</div>
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe">June,2016 - Decemper,2016 | Idaho department of Labor</div>
+                            <div class="topic-title">Software & Web Development Intern</div>
+                            <div class="topic-description">I learned ASP.Net MVC5.I gained my experience with HTML,CSS,JavaScript. I gained my knowladge
+                                with secure Database using SQL server.I learned jQuery. I aided in JobScape Web application
+                                project and I aided in IP-address filtering using SQL Server2014.
+
+                            </div>
+                        </div>
+                        <!-- End Topic -->
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe">Feb,2005 - Seb,2014 | AL Mansour University College</div>
+                            <div class="topic-title"> Professor for Computer Science & Software Engineer</div>
+                            <div class="topic-description">I taught many subjects for 2nd,3rd ,and 4th year in the computer science department. I was teaching
+                                a data structure for 2nd year , computer graphics for 3rd year, and digital image processing
+                                for 4th year since 2005. I taught a structural programming language in C++ at computer communication
+                                engineering department. In a software engineering department I taught a computer graphics.
+                                I accomplished a lot of projects for undergraduate students . I had a trainer job in a summer.
+                                I trained students how to install local wireless network. I got opportunity for training
+                                in AL Mansour university training academy.
+                            </div>
+                        </div>
+                        <!-- End Topic -->
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe">Seb,2005 - April,2010 | Irai CommisionThe Independent High Electoral Commission is Iraq's electoral
+                                commission.
+                            </div>
+                            <div class="topic-title"> Subervisour & Application Analysit</div>
+                            <div class="topic-description">I worked as a data entry temporary employee in the constitution voting in 2005. I worked as a
+                                supervisor for a data entry temporary employee. My responsibility was to supervised 20 persons.
+                                I planned the duty of each one, gave them tasks, and collected their productions. in 2006,
+                                I worked as a manager of voting station in terminal center and supervisor in the head quarter.
+                                I tested the software that collected the voting and gave my feedback to the developer. These
+                                feedback reducing the bug of application during the computing process in 2010.</div>
+                        </div>
+                        <!-- End Topic -->
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe">2004 - 2005 | Mazen AL Saad Inc.</div>
+                            <div class="topic-title">IT Specialist Technition</div>
+                            <div class="topic-description">I collected the Tenders from a government agencies. I had a charge for negotiation about contracts
+                                with the government agencies I worked as a technical support in the government agency for
+                                the devices that saled by Mazen AL Saad Company. I supplied the best solution to the customer
+                                in the head quarter of company I assembled the computer devices that ordered by government
+                                agency or person.</div>
+                        </div>
+
+                    </section>
+                    <!-- End Experience -->
+                    <!-- Begin Education -->
+                    <section class="education-container">
+                        <div class="container-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</div>
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe"> 2002 - 2006</div>
+                            <div class="topic-title">Iraqi Commission for Computer & Informatics,I.C.C.I,</div>
+                            <div class="topic-description">Masters of Computer Science</div>
+                        </div>
+                        <!-- Begin Topic -->
+                        <!-- Begin Topic -->
+                        <div class="topic">
+                            <div class="topic-timeframe">1997 - 2002</div>
+                            <div class="topic-title">AL Mansour University College</div>
+                            <div class="topic-description">Bachelor of Computer Science</div>
+                        </div>
+                        <!-- Begin Topic -->
+                    </section>
+                </div>
+            </div>
+            <!-- End of Second Column-->
+
+        </div>
+    </div>
+    <div class="ele-con text-center">
+        <div class="col-xs-12">
+            <div id="copyright">1190 W. Grand Ave. Boise, ID 83702 | (208) 392-2811 | <a href="mailto:halrubia@gmail.com">halrubia@gmail.com</a>                | &copy; 2017 Hasan ALrubaye. All rights reserved.</div>
+        </div>
+    </div>
+
+</body>
+
 </html>
